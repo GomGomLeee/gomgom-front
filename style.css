@@ -1,0 +1,239 @@
+:root {
+    --color1:#67594C;
+    --color2:#D2CDBC;
+    --color3:#E9E5DA;
+    --bodycolor:#FAF9F6;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color:var(--bodycolor);
+}
+header {
+    border-bottom: 4px solid var(--color3);    
+}
+.logo p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color1);
+    font-size: 32px;
+    font-family: MuseoModerno;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+#nav{
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 78rem;
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 16px;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin-right: 138px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    border-bottom: none;
+    color: var(--color1);
+
+}
+
+.mypage-button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: url(./mypage-icon.png) lightgray 50% / cover no-repeat;
+}
+.sec1 {
+    width: 100vw;
+    height: 394px;
+    display: flex;
+    justify-content: center;
+}
+.sec1Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 394px;
+    border-bottom: 2px solid var(--color3);
+}
+.sec-title {
+    color: var(--color1);
+    font-size: 20px;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 5vh;
+}
+.slide {
+    margin: 31px 0 53px 0;
+    display: flex;
+    align-items: center;
+}
+#btn-prev, 
+#btn-next {
+    border: none;
+    border-radius: 48px;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color: var(--color3);
+    box-shadow: 0px 2px 4px 0px rgba(210, 205, 189, 0.50);
+}
+.slide-op {
+    width: 280px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(210, 205, 189, 0.50);
+    padding: 24px;
+}
+.slide-op:nth-child(1),
+.slide-op:nth-child(2) {
+    margin-right: 40px;
+}
+#options {
+    display: flex;
+    margin:0 82px 0 82px;
+}
+.sec2 {
+    width: 100vw;
+    height: 192px;
+    display: flex;
+    justify-content: center;
+}
+.sec2Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#category-btns {
+    display: flex;
+    align-items: center;
+    margin: 35px 0 41px 0;
+}
+#category-btns button {
+    margin-right: 8px;
+    display: flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 17px;
+    border: 2px solid var(--color2);
+    background: var(--color3);
+}
+.detail-sec1 {
+    width: 100vw;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid var(--color3);    
+}
+.questionBox {
+    width: 738px;
+    height: 324px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: var(--ffffff, #FFF);
+    
+    /* Drop Shadow */
+    box-shadow: 0px 2px 4px 0px rgba(210, 205, 189, 0.50);
+    margin-left: 22px;
+}
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+}
+.detailContainer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    color: var(--color1);
+    font-size: 20px;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+#todayQuestion {
+    display: flex;
+    margin-top: 68px;
+}
+#todayQuestion img {
+    width: 120px;
+    height: 90px;
+    flex-shrink: 0;
+    background-blend-mode: darken;
+}
+.detail-sec2 {
+    width: 100vw;
+    height: 308px;
+    flex-shrink: 0;
+    background: var(--ffffff, #FFF);
+}
+.detailFooter {
+    width: 100vw;
+    height: 211px;
+    flex-shrink: 0;
+    background: var(--color3);
+}
+.answerForm {
+    display: flex;
+    justify-content: center;
+
+}
+.answerForm input{
+    width: 826px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 44px;
+    background: #FFF;
+    margin-right: 20px;
+    border-style: none;
+}
+.answerForm input[type="text"]::placeholder {
+    color: var(--d-2-cdbc, #D2CDBC);
+    font-size: 20px;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    padding-left: 51px;
+}
+.answerForm button {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    background: url(photo/answerBtn.svg);
+    background-size: cover;
+    border-style: none;
+}
+.answerForm >div {
+    margin: 40px 0 99px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
