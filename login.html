@@ -6,7 +6,7 @@
     <title>post-list</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
-</head>
+  </head>
 <body>
     <header>
         <div class="logo">
@@ -24,25 +24,21 @@
           </a>
         </nav>
     </header>
-    <section class="detail-sec1">
-        <div class="detailContainer">
-            <p>곰곰이의 고민</p>
-            <div id="todayQuestion">
-                <img src="photo/gomgom.png">
-                <div class="questionBox">
-                </div>
-            </div>
+    <section class="login-sec">
+        <div id="login-icon-title">
+            <div id="login-icon"></div>
+            <div id="login-title"><span style="font-size:medium;">고민하지 말고,</span><br>곰곰에서 고민을 나누어요</div>
+        </div>
+        <form id="login-form">
+            <input type="text" placeholder="아이디를 입력하세요.">
+            <input type="password" placeholder="비밀번호를 입력하세요.">
+        </form>
+        <div id="login-button">
+            <button class="loginBtn" type="submit">로그인</button>
+            <button id="signBtn" type="submit">회원가입</button>
         </div>
     </section>
-    <section class="detail-sec2">
-    </section>
-    <footer class="detailFooter">
-        <form class="answerForm">
-            <div>
-                <input type="text" placeholder="곰곰이의 고민에 댓글을 써주세요.">
-                <button type="submit"></button>
-            </div>
-        </form>
+    <footer class="main-footer">
     </footer>
 </body>
 </html>

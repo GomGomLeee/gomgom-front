@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>post-list</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -24,25 +26,25 @@
           </a>
         </nav>
     </header>
-    <section class="detail-sec1">
-        <div class="detailContainer">
-            <p>곰곰이의 고민</p>
-            <div id="todayQuestion">
-                <img src="photo/gomgom.png">
-                <div class="questionBox">
-                </div>
-            </div>
+    <section class="signup-sec">
+        <div class="signupContainer">
+            <p>회원가입</p>
+            <img src="photo/mypage-icon.png">
+            <label for="file-input">사진 등록</label>
+            <input type="file" id="file-input" style="display: none;">
         </div>
-    </section>
-    <section class="detail-sec2">
-    </section>
-    <footer class="detailFooter">
-        <form class="answerForm">
-            <div>
-                <input type="text" placeholder="곰곰이의 고민에 댓글을 써주세요.">
-                <button type="submit"></button>
-            </div>
+        <form class="signupForm">
+            <div>아이디</div>
+            <input type="text"placeholder="아이디를 입력하세요.">
         </form>
+        <form class="signupForm">
+            <div>비밀번호</div>
+            <input type="password" placeholder="비밀번호를 입력하세요.">
+        </form>
+        <button type="submit" class="loginBtn">완료</button>
+    </section>
+    <footer class="main-footer">
+
     </footer>
 </body>
 </html>
