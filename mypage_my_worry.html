@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>mypage_my_worry</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
-  </head>
+</head>
 <body>
     <header>
         <div class="logo">
@@ -25,23 +27,21 @@
         </nav>
     </header>
     <main>
-      <section class="login">
-        <div class="login__div">
-            <div class="login__icon"></div>
-            <div class="login__title"><span style="font-size:medium;">고민하지 말고,</span><br>곰곰에서 고민을 나누어요</div>
-        </div>
-        <form class="login-form">
-            <input type="text" placeholder="아이디를 입력하세요.">
-            <input type="password" placeholder="비밀번호를 입력하세요.">
-            <div class="btns">
-              <input class="btns__login" type="submit" value="로그인">
+        <section class="mypage">
+            <div class="mypage__title">마이페이지</div>
+            <div class="mypage__content">
+                <div class="mypage__nicname">
+                    <img src="photo/mypage-icon.png">
+                    <span>아이디</span>
+                </div>
+                <div class="mypage__settings">
+                    <span>프로필 수정</span>
+                    <span>로그아웃</span>
+                </div>    
             </div>
-        </form>
-        <button class="btns__signup" type="submit">회원가입</button>
-    </section>
-  </main>
-  <footer class="main-footer">
-  </footer>
-
+        </section>
+    </main>
+    <footer class="main-footer">
+    </footer>
 </body>
 </html>

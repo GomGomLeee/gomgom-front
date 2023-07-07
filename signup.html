@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>post-list</title>
+    <title>signup</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,23 +26,25 @@
           </a>
         </nav>
     </header>
-    <section class="signup-sec">
-        <div class="signupContainer">
-            <p>회원가입</p>
+    <main>
+      <section class="signup">
+        <div class="signup__container">
+            <p class="signup__title">회원가입</p>
             <img src="photo/mypage-icon.png">
             <label for="file-input">사진 등록</label>
             <input type="file" id="file-input" style="display: none;">
         </div>
-        <form class="signupForm">
+        <form class="signup__form">
             <div>아이디</div>
             <input type="text"placeholder="아이디를 입력하세요.">
         </form>
-        <form class="signupForm">
+        <form class="signup__form">
             <div>비밀번호</div>
             <input type="password" placeholder="비밀번호를 입력하세요.">
         </form>
-        <button type="submit" class="loginBtn">완료</button>
-    </section>
+        <button type="submit" class="orange-btn">완료</button>
+      </section>
+    </main>
     <footer class="main-footer">
 
     </footer>

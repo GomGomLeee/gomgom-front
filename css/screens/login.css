@@ -32,9 +32,9 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: 78px 0 122px 0;
 }
-.login-form input {
+.login-form input[type="text"],
+.login-form input[type="password"] {
     width: 557px;
     height: 80px;
     flex-shrink: 0;
@@ -43,6 +43,7 @@
     background: var(--ffffff, #FFF);
 }
 .login-form input[type="text"] {
+    margin-top: 78px;
     margin-bottom: 22px;
     text-indent: 31px;
     color: var(--color1);
@@ -73,10 +74,9 @@
 }
 .btns {
     display: flex;
-    flex-direction: column;
-
+    justify-content: center;
 }
-.btns__login{
+.btns__login {
     width: 340px;
     height: 75px;
     flex-shrink: 0;
@@ -90,7 +90,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
+    margin-top: 122px;
     margin-bottom: 42px;
+    cursor: pointer;
+
 }
 .btns__signup {
     color: var(--grey-1, #606067);
@@ -102,4 +105,6 @@
     line-height: 100%;
     border-style: none;
     background-color: transparent;
+    cursor: pointer;
+
 }
