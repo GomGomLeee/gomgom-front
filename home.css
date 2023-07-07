@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
 .logo p {
     color: var(--67594-c, #67594C);
     font-size: 32px;
@@ -275,7 +277,7 @@ footer {
 .main_visual_last {
     background: var(--faf-9-f-6, #FAF9F6);
     display: flex;
-    height: 2498px;
+    height: 1475px;
     align-items: center;
     flex-direction: column;
 }
@@ -366,9 +368,8 @@ footer {
 }
 
 .todayWorry {
-    margin-top: 319px;
+    margin-top: 116px;
     width: 1180px;
-
 }
 
 .todayWorryText {
@@ -379,9 +380,33 @@ footer {
 
 .todayWorryContent {
     margin-top: 34px;
+    display: flex;
+    flex-direction: row;
 }
 
-.todayWorryContent-1 {
+.todayWorryContent-right {
+    margin-left: 20px;
+}
+
+.todayWorryContent-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todayWorryContent-left-start {
+    height: 300px;
+}
+
+.todayWorryContent-left-medium {
+    height: 232px;
+}
+
+.todayWorryContent-right-start {
+    /*margin-bottom: 45px;*/
+}
+
+.todayWorryContent-left-start-box {
     width: 580px;
     height: 220px;
     flex-shrink: 0;
@@ -390,141 +415,210 @@ footer {
     box-shadow: 0px 2px 4px 0px rgba(210, 205, 189, 0.50);
 }
 
-.todayWorryContent-1-text-box-1-text {
+.todayWorryContent-left-start-profile {
+    width: 580px;
+    height: 80px;
+}
+
+.todayWorryContent-left-medium-box {
+    width: 580px;
+    height: 152px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(210, 205, 189, 0.50);
+}
+
+.todayWorryContent-left-end-box {
+    width: 580px;
+    height: 302px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(210, 205, 189, 0.50);
+}
+
+.todayWorryContent-left-end-profile {}
+
+.todayWorryContent-right-start {
+    height: 382px;
+}
+
+.todayWorryContent-right-start-box {
+    width: 580px;
+    height: 302px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(210, 205, 189, 0.50);
+}
+
+.todayWorryContent-right-start-profile {
+    height: 80px;
+}
+
+.todayWorryContent-right-end-box {
+    width: 580px;
+    height: 302px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(210, 205, 189, 0.50);
+}
+
+.todayWorryContent-left-start-box-text {
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.todayWorryContent-left-start-box-text-1 {
     color: #67594C;
-    font-size: 20px;
     font-family: Pretendard;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
+    margin-top: 40px;
+}
+
+.todayWorryContent-left-start-box-button {
+    margin-left: 18px;
+    margin-right: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.todayWorryContent-left-start-box-post {
     margin-left: 20px;
-
-    margin-top: 24px;
-}
-
-.todayWorryContent-1-text-box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.todayWorryContent-1-text-box-1-icon-1 {
-    margin-left: 168px;
-    margin-top: 23px;
-    display: flex;
-    align-items: center;
-}
-
-.todayWorryContent-1-text-box-1-icon-2 {
-    margin-left: 11.33px;
-}
-
-.todayWorryContent-1-text-box-1-icon-1-num {
-    color: var(--d-2-cdbc, #D2CDBC);
-    font-size: 13px;
-    font-family: Pretendard;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 160%;
-    margin-left: 4px;
-}
-
-.todayWorryContent-1-text-box-1-icon-2-num {
-    color: var(--d-2-cdbc, #D2CDBC);
-    font-size: 13px;
-    font-family: Pretendard;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 160%;
-    margin-left: 4px;
-}
-
-.todayWorryContent-1-text-box-1-icon-2 {
-    display: flex;
-    align-items: center;
-    margin-top: 23px;
-}
-
-.sandBox {
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
-}
-
-.sandBox-1 {
-    width: 260px;
-    height: 72px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    border: 2px solid var(--e-9-e-5-da, #E9E5DA);
-    background: var(--faf-9-f-6, #FAF9F6);
-    margin-left: 20px;
-}
-
-.sandBox-2 {
-    width: 260px;
-    height: 72px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    border: 2px solid var(--e-9-e-5-da, #E9E5DA);
-    background: var(--faf-9-f-6, #FAF9F6);
-    margin-left: 20px;
-}
-
-.sandBox-1-text,
-.sandBox-2-text {
-    color: #67594C;
-    font-size: 20px;
-    font-family: Pretendard;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%;
-    margin-top: 21px;
-    margin-left: 95px;
-}
-
-.sandBoxText {
-    color: #67594C;
-    font-size: 13px;
-    font-family: Pretendard;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
+    margin-right: 107px;
+    margin-bottom: 15px;
+    margin-top: 10px;
     display: flex;
     width: 453px;
     flex-direction: column;
     flex-shrink: 0;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.profile{ 
-    margin-top: 23px;
-    width: 580px;
-    display: flex;
-    align-items: center;
-}
-
-.profile-name{ 
-    color: var(--67594-c, rgba(103, 89, 76, 0.50));
-    font-size: 15px;
+    color: #67594C;
     font-family: Pretendard;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.todayWorryContent-left-start-box-button-left {
+    width: 260px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid var(--e-9-e-5-da, #E9E5DA);
+    background: var(--faf-9-f-6, #FAF9F6);
+    color: #67594C;
+    font-family: Pretendard;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 160%;
-    margin-left: 13px;
 }
 
-.profile-time{ 
-    color: var(--67594-c, rgba(103, 89, 76, 0.50));
-    font-size: 13px;
+.todayWorryContent-left-start-box-button-right {
+    width: 260px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid var(--e-9-e-5-da, #E9E5DA);
+    background: var(--faf-9-f-6, #FAF9F6);
+    color: #67594C;
     font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    margin-left: 20px;
+}
+
+.todayWorryContent-left-start-box-button-left-1 {
+    margin-top: 21px;
+    margin-left: 95px;
+}
+
+.todayWorryContent-left-start-box-button-right-1 {
+    margin-top: 21px;
+    margin-left: 95px;
+}
+
+.todayWorryContent-left-start-box-text-2 {
+    margin-left: 168px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.todayWorryContent-left-start-box-text-3 {
+    margin-left: 11.33px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.todayWorryContent-left-start-box-text-2-text {
+    color: var(--d-2-cdbc, #D2CDBC);
+    font-family: Pretendard;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-left: 4px;
+}
+
+.todayWorryContent-left-start-box-text-3-text {
+    color: var(--d-2-cdbc, #D2CDBC);
+    font-family: Pretendard;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-left: 4px;
+}
+
+.todayWorryContent-left-start-profile-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.todayWorryContent-left-start-profile-box-text1 {
+    margin-left: 13px;
+    color: var(--67594-c, rgba(103, 89, 76, 0.50));
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.todayWorryContent-left-start-profile-box-text2 {
+    color: var(--67594-c, rgba(103, 89, 76, 0.50));
+    font-family: Pretendard;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: 160%;
     margin-left: 381px;
 }
 
-.profile-image{ 
-    margin-left: 20px;
+.todayWorryContent-left-start-profile-box-icon{ 
+    margin-top: 8px;
+}
+
+.todayWorryContent-left-start-profile-box-text1{ 
+    margin-top: 11px;
+}
+
+.todayWorryContent-left-start-profile-box-text2{ 
+    margin-top: 11px;
 }
