@@ -3,6 +3,7 @@
 @import "component/footer.css";
 @import "component/detail-footer.css";
 @import "component/question-box.css";
+@import "component/worry-content.css";
 /*screens*/
 @import "screens/post-detail-today-question.css";
 @import "screens/post-list-all.css";
@@ -17,6 +18,7 @@
     --color4:#D9D9D9;
     --bodycolor:#FAF9F6;
 }
+html,
 body {
     margin: 0;
     padding: 0;
@@ -24,8 +26,8 @@ body {
 }
 main {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 }
