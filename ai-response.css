@@ -253,3 +253,7 @@ footer {
     height: 4px;
     background: var(--e-9-e-5-da, #E9E5DA);
 }
+
+main{ 
+    background: var(--faf-9-f-6, #FAF9F6);
+}
