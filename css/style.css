@@ -3,7 +3,6 @@
 @import "component/footer.css";
 @import "component/detail-footer.css";
 @import "component/question-box.css";
-@import "component/worry-content.css";
 /*screens*/
 @import "screens/post-detail-today-question.css";
 @import "screens/post-list-all.css";
