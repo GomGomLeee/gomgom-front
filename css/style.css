@@ -6,7 +6,6 @@
 /*screens*/
 @import "screens/signup.css";
 @import "screens/login.css";
-@import "screens/mypage_my_worry.css";
 :root {
     --color1:#67594C;
     --color2:#D2CDBC;
