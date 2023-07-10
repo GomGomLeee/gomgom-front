@@ -5,11 +5,9 @@
 @import "component/question-box.css";
 /*screens*/
 @import "screens/post-detail-today-question.css";
-@import "screens/post-list-all.css";
 @import "screens/signup.css";
 @import "screens/login.css";
 @import "screens/mypage_my_worry.css";
-@import "screens/post-detail-view.css";
 :root {
     --color1:#67594C;
     --color2:#D2CDBC;
@@ -24,7 +22,6 @@ body {
     background-color:var(--bodycolor);
 }
 main {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;

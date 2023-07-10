@@ -3,7 +3,10 @@
     height: 76px;
     flex-shrink: 0;
     background: var(--67594-c, rgba(103, 89, 76, 0.50));
+    position: fixed;
     bottom: 0;
+    left: 0
+
 }
 .footer {
     margin-top: auto;

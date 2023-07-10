@@ -3,6 +3,10 @@
     height: 211px;
     flex-shrink: 0;
     background: var(--color3);
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0
 }
 .answer-form {
     display: flex;
@@ -45,7 +49,6 @@
     border-style: none;
 }
 .answer-form__container {
-    background-color: aqua;
     margin: 40px 0 99px 0;
     display: flex;
     align-items: center;
@@ -56,7 +59,7 @@
     height: 72px;
 
 }
-.answer-form__container svg {
+.answer-form__searchImgBtn {
     position: absolute;
     right: 34px;
 }
