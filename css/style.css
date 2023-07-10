@@ -4,7 +4,6 @@
 @import "component/detail-footer.css";
 @import "component/question-box.css";
 /*screens*/
-@import "screens/post-detail-today-question.css";
 @import "screens/signup.css";
 @import "screens/login.css";
 @import "screens/mypage_my_worry.css";

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mypage_my_worry</title>
+    <title>post-detail-view-question</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/screens/post-detail-view.css">
+    <script defer src="js/post-detail-view.js"></script>  
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -27,23 +27,154 @@
         </nav>
     </header>
     <main>
-        <section class="mypage">
-            <div class="mypage__title">마이페이지</div>
-            <div class="mypage__content">
-                <div class="mypage__nicname">
-                    <img src="photo/mypage-icon.png">
-                    <span>아이디</span>
+        <section class="detail-sec1">
+            <div class="detail-container">
+                <p class="detail-container__today-title">OO님의 고민</p>
+                <div class="detail-container__question">
+                    <img class="detail-container__view-user" src="photo/mypage-icon.png">
+                    <div class="detail-container__div">
+                        <div class="detail-container__question-box">
+                            <div class="question-box__title-box">
+                                <h3 class="question-box__title">고양이 모래는 뭐가 좋을까요?</h3>
+                            </div>
+                            <h4 class="question-box__content">
+                                취향이 참 까탈스런 고양이 인데요, 변로나이트 쓰다가 자꾸 
+                                이불에 볼일을 봐서 화장실 모래가 문제인가 싶어서 고민 올려요ㅠㅠ 
+                                고양이 박사님들 도와주세요!
+                            </h4>
+                            <div class="question-box__choice-btns">
+                                <button class="question-box__choice-btn">
+                                    <div class="choice-btn__content">
+                                        <span>두부모래</span>
+                                        <span class="hidden ratio">60%</span>
+                                    </div>
+                                </button>
+                                <button class="question-box__choice-btn">
+                                    <div class="choice-btn__content">
+                                        <span>종이모래</span>
+                                        <span class="hidden ratio">40%</span>
+                                    </div>
+                                </button>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-container__like-btn">
+                        <span>공감돼요!</span>
+                        <img src="photo/heartEmpty.svg">
+                    </div>    
                 </div>
-                <div class="mypage__settings">
-                    <span>프로필 수정</span>
-                    <span>로그아웃</span>
-                </div>    
             </div>
+            <div class="likeCountContainer">
+                <div class="likeCount">
+                    <div class="likeCount__comment">
+                        <img src="photo/message.svg">
+                        <span>999+</span>
+                    </div>
+                    <div class="likeCount__heart">
+                        <img src="photo/heart.svg">
+                        <span>999+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-container__border"></div>
+            <!--댓글-->
+            <div class="comments">
+                <div class="comments-container">
+                    <div class="comments-container__userImg">
+                        <img src="photo/mypage-icon.png">
+                    </div>
+                    <div class="comments-container__comment-box">
+                        <div class="comments-container__comment-box__user-id">
+                            작성자 아이디
+                        </div>
+                        <div class="comments-container__comment-box__comment">
+                            두부모래가 좋아요~~~
+                        </div>
+                        <div class="comments-container__comment-box__time">
+                            6시간 전
+                        </div>
+                        <div class="comments-container__comment-box__img">
+                            <img src="photo/tofuLitterBig.png">
+                        </div>
+                    </div>
+                </div> 
+                <div class="comments__border"></div>
+                <div class="comments-container">
+                    <div class="comments-container__userImg">
+                        <img src="photo/mypage-icon.png">
+                    </div>
+                    <div class="comments-container__comment-box">
+                        <div class="comments-container__comment-box__user-id">
+                            작성자 아이디
+                        </div>
+                        <div class="comments-container__comment-box__comment">
+                            저희집 고냥이는 10년째 두부모래 사용 중~
+                        </div>
+                        <div class="comments-container__comment-box__time">
+                            3시간 전
+                        </div>
+                    </div>
+                </div>  
+                <div class="comments__border"></div>
+                <div class="comments-container">
+                    <div class="comments-container__userImg">
+                        <img src="photo/mypage-icon.png">
+                    </div>
+                    <div class="comments-container__comment-box">
+                        <div class="comments-container__comment-box__user-id">
+                            작성자 아이디
+                        </div>
+                        <div class="comments-container__comment-box__comment">
+                            두부모래가 좋아요~~~
+                        </div>
+                        <div class="comments-container__comment-box__time">
+                            6시간 전
+                        </div>
+                        <div class="comments-container__comment-box__img">
+                            <img src="photo/tofuLitterBig.png">
+                        </div>
+                    </div>
+                </div> 
+                <div class="comments__border"></div>
+                <div class="comments-container">
+                    <div class="comments-container__userImg">
+                        <img src="photo/mypage-icon.png">
+                    </div>
+                    <div class="comments-container__comment-box">
+                        <div class="comments-container__comment-box__user-id">
+                            작성자 아이디
+                        </div>
+                        <div class="comments-container__comment-box__comment">
+                            저희집 고냥이는 10년째 두부모래 사용 중~
+                        </div>
+                        <div class="comments-container__comment-box__time">
+                            3시간 전
+                        </div>
+                    </div>
+                </div>  
+                <div class="comments__border"></div>
+   
+            </div>
+
         </section>
+
     </main>
-    <footer class="main-footer">
-        <div class="footer">
-          <p id="footer_content">footer 내용 구성하기</p>
+    <footer class="footer">
+        <div class="detail-footer">
+            <form class="answer-form">
+                <div class="answer-form__div">
+                    <div class="answer-form__container">
+                        <input type="text" placeholder="곰곰이의 고민에 댓글을 써주세요.">
+                        <button type="submit"></button>
+                        <div class="answer-form__searchImgBtn">
+                            <input type="file" class="hidden" id="inputFile">
+                            <img src="photo/searchImgBtn.svg">
+                        </div>
+                    </div>
+                    <button><img src="photo/submitBtn.svg"></button>
+                </div>
+            </form>
         </div>
     </footer>
 </body>

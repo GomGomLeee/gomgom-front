@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>post-detail-today-question</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/screens/post-detail-today-question.css">
+    <script defer src="js/post-detail-today-question.js"></script>  
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -24,36 +26,151 @@
           </a>
         </nav>
     </header>
-        <main>
+    <main>
         <section class="detail-sec1">
             <div class="detail-container">
                 <p class="detail-container__today-title">곰곰이의 고민</p>
                 <div class="detail-container__question">
                     <img class="detail-container__detail-user" src="photo/gomgom.png">
                     <div class="detail-container__div">
+                        <div class="detail-container__question-box">
+                            <div class="question-box__title-box">
+                                <span class="question-box__title">저메추해주세요!</span>
+                            </div>
+                            <h4 class="question-box__content">
+                                요즘 날씨가 너무너무 덥죠.
+                                이렇게 더운 날이면 기력도 없고, 입맛도 없어지는것 같아요.
+                                그래도 잘 챙겨먹어야 힘이 나는거 아시죠?!
+                                <br><br>
+                                저는 요즘 시원~한 콩국수에 빠졌어요.
+                                얼음동동 띄운 콩국수 한그릇이면 속까지 시원해지더라구요 ㅎㅎ
+                                <br><br>
+                                여러분은 어떤 저녁 메뉴를 추천하시나요?
+                            </h4>
+                        </div>
+                        <div class="detail-container__img">
+                            <img src="photo/kongguksu.png">
+                        </div>      
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="detail-sec2">
-        </section>
-    </main>
-    <footer class="detail-footer">
-        <form class="answer-form">
-            <div class="answer-form__div">
-                <div class="answer-form__container">
-                    <input type="text" placeholder="곰곰이의 고민에 댓글을 써주세요.">
-                    <button type="submit"></button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path d="M30 2H2V30H30V2Z" stroke="#D2CDBC" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M2 26.1864L10.9067 17.2798L18.5467 24.9065L23.64 19.8131L30 26.1864" stroke="#D2CDBC" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M18.5467 13.4532C19.9532 13.4532 21.0933 12.313 21.0933 10.9065C21.0933 9.50005 19.9532 8.35986 18.5467 8.35986C17.1402 8.35986 16 9.50005 16 10.9065C16 12.313 17.1402 13.4532 18.5467 13.4532Z" stroke="#D2CDBC" stroke-width="2" stroke-miterlimit="10"/>
-                    </svg>
+            <div class="likeCountContainer">
+                <div class="likeCount">
+                    <div class="likeCount__comment">
+                        <img src="photo/message.svg">
+                        <span>999+</span>
+                    </div>
+                    <div class="likeCount__heart">
+                        <img src="photo/heart.svg">
+                        <span>999+</span>
+                    </div>
                 </div>
-                <button><img src="photo/submitBtn.svg"></button>
             </div>
-        </form>
-    </footer>
+            <div class="detail-container__border"></div>
+            <!--댓글-->
+            <div class="comments">
+                <div class="comments-container">
+                    <div class="comments-container__userImg">
+                        <img src="photo/mypage-icon.png">
+                    </div>
+                    <div class="comments-container__comment-box">
+                        <div class="comments-container__comment-box__user-id">
+                            작성자 아이디
+                        </div>
+                        <div class="comments-container__comment-box__comment">
+                            한국인은 이열치열! 시원한 콩국수먹다 질리면 순대국은 어때?
+                        </div>
+                        <div class="comments-container__comment-box__time">
+                            6시간 전
+                        </div>
+                        <div class="comments-container__comment-box__img">
+                            <img src="photo/Sundae Soup.png">
+                        </div>
+                    </div>
+                </div> 
+                <div class="comments__border"></div>
+                <div class="comments-container">
+                    <div class="comments-container__userImg">
+                        <img src="photo/mypage-icon.png">
+                    </div>
+                    <div class="comments-container__comment-box">
+                        <div class="comments-container__comment-box__user-id">
+                            작성자 아이디
+                        </div>
+                        <div class="comments-container__comment-box__comment">
+                            한국인은 이열치열! 시원한 콩국수먹다 질리면 순대국은 어때?
+                        </div>
+                        <div class="comments-container__comment-box__time">
+                            6시간 전
+                        </div>
+                        <div class="comments-container__comment-box__img">
+                            <img src="photo/Sundae Soup.png">
+                        </div>
+                    </div>
+                </div>  
+                <div class="comments__border"></div>
+                <div class="comments-container">
+                    <div class="comments-container__userImg">
+                        <img src="photo/mypage-icon.png">
+                    </div>
+                    <div class="comments-container__comment-box">
+                        <div class="comments-container__comment-box__user-id">
+                            작성자 아이디
+                        </div>
+                        <div class="comments-container__comment-box__comment">
+                            한국인은 이열치열! 시원한 콩국수먹다 질리면 순대국은 어때?
+                        </div>
+                        <div class="comments-container__comment-box__time">
+                            6시간 전
+                        </div>
+                        <div class="comments-container__comment-box__img">
+                            <img src="photo/Sundae Soup.png">
+                        </div>
+                    </div>
+                </div> 
+                <div class="comments__border"></div>
+                <div class="comments-container">
+                    <div class="comments-container__userImg">
+                        <img src="photo/mypage-icon.png">
+                    </div>
+                    <div class="comments-container__comment-box">
+                        <div class="comments-container__comment-box__user-id">
+                            작성자 아이디
+                        </div>
+                        <div class="comments-container__comment-box__comment">
+                            한국인은 이열치열! 시원한 콩국수먹다 질리면 순대국은 어때?
+                        </div>
+                        <div class="comments-container__comment-box__time">
+                            6시간 전
+                        </div>
+                        <div class="comments-container__comment-box__img">
+                            <img src="photo/Sundae Soup.png">
+                        </div>
+                    </div>
+                </div>  
+                <div class="comments__border"></div>
+   
+            </div>
 
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="detail-footer">
+            <form class="answer-form">
+                <div class="answer-form__div">
+                    <div class="answer-form__container">
+                        <input type="text" placeholder="곰곰이의 고민에 댓글을 써주세요.">
+                        <button type="submit"></button>
+                        <div class="answer-form__searchImgBtn">
+                            <input type="file" class="hidden" id="inputFile">
+                            <img src="photo/searchImgBtn.svg">
+                        </div>
+                    </div>
+                    <button><img src="photo/submitBtn.svg"></button>
+                </div>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
