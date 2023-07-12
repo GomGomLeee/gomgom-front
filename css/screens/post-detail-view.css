@@ -12,6 +12,7 @@
     box-shadow: 0px 2px 4px 0px rgba(210, 205, 189, 0.50);
 }
 .detail-container {
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -19,8 +20,6 @@
     display: flex;
     justify-content: center;
     margin-top: 68px;
-    margin-left: 392px;
-    margin-right: 670px;
 }
 
 .detail-container p {
@@ -33,6 +32,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
+    
 }
 
 .detail-container__view-user {
@@ -40,10 +40,12 @@
     height: 80px;
     flex-shrink: 0;
     background-blend-mode: darken;
+    margin-left: 392px;
     margin-right: 40px;
 }
 .detail-container__div {
     position: relative;
+    margin-right: 618px;
 }
 .detail-container__like-btn {
     position: absolute;
@@ -68,7 +70,7 @@
 }
 .detail-container__border {
     margin-top: 21px;
-    width: 1920px;
+    width: 100vw;
     height: 2px;
     background: #E9E5DA;
 }
@@ -137,12 +139,13 @@
     display: none;
 }
 .likeCountContainer {
+    width: 100vw;
     margin-top: 105px;
     margin-bottom: 19px;
 }
 .likeCount {
     display: flex;
-    margin-left: 1277px;
+    margin-left: 1500px;
     margin-right: 507px;
 
 }
@@ -170,17 +173,43 @@
     line-height: 160%;
 }
 .comments {
-    width: 1920px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
 }
+.comments-box {
+    width: 880px;
+    overflow-y: scroll;
+    max-height: 800px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+.comments-box::-webkit-scrollbar {
+    width: 10px;
+    height: 0;
+    background-color: transparent;
+}
+  
+.comments-box::-webkit-scrollbar-track {
+    background-color: #FAF9F6;
+}
+.comments-box::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #E9E5DA 0%, #E9E5DA 100%);
+}
+
+
 .comments-container {
     display: flex;
     margin-top: 40px;
-    margin-left: 512px;
-    margin-right: 507px;
     position: relative;
+    margin-right: 20px;
+
 }
+
 .comments-container__userImg {
     margin-right: 16px;
 }
@@ -218,8 +247,9 @@
 }
 
 .comments__border {
-    margin-top: 14px;
     width: 1092px;
     height: 2px;
     background: #FAF9F6;
+    margin: 14px 414px 0 533px;
 }
+

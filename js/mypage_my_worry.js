@@ -1,10 +1,12 @@
 const todayWorryLeftBtn = document.querySelectorAll('.todayWorryContent-two-buttons-left');
 const todayWorryRightBtn = document.querySelectorAll('.todayWorryContent-two-buttons-right');
 const todayWorrySmallBtn = document.querySelectorAll('.todayWorryContent-four-buttons-choice-btn');
-const myWorryBtn1 = document.querySelectorAll('.myWorry-button-1');
-const myWorryBtn2 = document.querySelectorAll('.myWorry-button-2');
-const myWorryBtn3 = document.querySelectorAll('.myWorry-button-3');
-const myWorryBtnTitle = document.querySelector('.myWorry-btn-title');
+const myWorryBtn1 = document.querySelector('.myWorry-button-1');
+const myWorryBtn2 = document.querySelector('.myWorry-button-2');
+const myWorryBtn3 = document.querySelector('.myWorry-button-3');
+const myWorryBtnTitle = document.querySelector('#myWorry-btn-title');
+const myWorryBtnCount = document.querySelector('#myWorry-btn-count');
+
 // 색상
 const brownColor =  '#67594C';
 const whiteColor = '#FAF9F6';
@@ -20,12 +22,12 @@ todayWorryLeftBtn.forEach((todayWorryLeftBtn, index) => {
       if (isClicked) {
         this.style.backgroundColor = whiteColor;
         this.style.color = brownColor;
-        todayWorryRightBtn[index].style.color = brownColor;
+        todayWorryRightBtn.style.color = brownColor;
         hiddenElement.classList.add('hidden');
       } else {
         this.style.backgroundColor = brownColor;
         this.style.color = whiteColor;
-        todayWorryRightBtn[index].style.color = notchosenBtnColor;
+        todayWorryRightBtn.style.color = notchosenBtnColor;
         hiddenElement.classList.remove('hidden');
       }
   
@@ -41,12 +43,12 @@ todayWorryRightBtn.forEach((todayWorryRightBtn, index) => {
       if (isClicked) {
         this.style.backgroundColor = whiteColor;
         this.style.color = brownColor;
-        todayWorryLeftBtn[index].style.color = brownColor;
+        todayWorryLeftBtn.style.color = brownColor;
         hiddenElement.classList.add('hidden');
       } else {
         this.style.backgroundColor = brownColor;
         this.style.color = whiteColor;
-        todayWorryLeftBtn[index].style.color = notchosenBtnColor;
+        todayWorryLeftBtn.style.color = notchosenBtnColor;
         hiddenElement.classList.remove('hidden');
       }
   
@@ -82,55 +84,73 @@ todayWorrySmallBtn.forEach((button, index) => {
       isClicked = !isClicked;
     });
 });
-myWorryBtn2.forEach((myWorryBtn2, index) => {
-    let isClicked = false;
-  
-    myWorryBtn2.addEventListener('click', function() {
-      if (isClicked) {
-        this.style.backgroundColor = "#E9E5DA";
-        this.style.color = brownColor;
-        myWorryBtn1[index].style.backgroundColorcolor = "#E9E5DA";
-        myWorryBtn1[index].style.color = brownColor;
 
-        myWorryBtn3[index].style.backgroundColorcolor = "#E9E5DA";
-        myWorryBtn3[index].style.color = brownColor;
-      } else {
-        this.style.backgroundColor = brownColor;
-        this.style.color = whiteColor;
-        myWorryBtn1[index].style.backgroundColorcolor = "#E9E5DA";
-        myWorryBtn1[index].style.color = brownColor;
+// 두 번째 버튼 클릭 상태 변수
+let isButton2Clicked = false;
 
-        myWorryBtn3[index].style.backgroundColorcolor = "#E9E5DA";
-        myWorryBtn3[index].style.color = brownColor;
-
-      }
-  
-      isClicked = !isClicked;
-    });
+// 두 번째 버튼을 클릭했을 때의 동작
+document.querySelector('.myWorry-button-2').addEventListener('click', function() {
+  if (!isButton2Clicked) {
+    // 배경색과 폰트색 변경
+    this.classList.add('myWorry-button-1');
+    this.classList.remove('myWorry-button-2');
+    document.querySelector('.myWorry-button-text__title-2').style.color = whiteColor;
+    document.querySelector('.myWorry-button-text__count-2').style.color = whiteColor;
+    myWorryBtnCount.style.color = 'var(--67594-c, rgba(103, 89, 76, 0.50))';
+    // 다른 버튼 찾아서 배경색과 폰트색 변경
+    const otherButtons = document.querySelectorAll('.myWorry-buttons > div:not(.myWorry-button-2)');
+    for (let i = 0; i < otherButtons.length; i++) {
+      const button = otherButtons[i];
+      button.classList.add('myWorry-button-2');
+      button.querySelector('.myWorry-button-text__title-1').style.color = brownColor;
+      button.querySelector('.myWorry-button-text__title-3').style.color = brownColor;
+    }
+  } 
 });
-myWorryBtn3.forEach((myWorryBtn3, index) => {
-    let isClicked = false;
-  
-    myWorryBtn3.addEventListener('click', function() {
-      if (isClicked) {
-        this.style.backgroundColor = "#E9E5DA";
-        this.style.color = brownColor;
-        myWorryBtn1[index].style.backgroundColorcolor = "#E9E5DA";
-        myWorryBtn1[index].style.color = brownColor;
+// 두 번째 버튼 클릭 상태 변수
+let isButton3Clicked = false;
 
-        myWorryBtn2[index].style.backgroundColorcolor = "#E9E5DA";
-        myWorryBtn2[index].style.color = brownColor;
-      } else {
-        this.style.backgroundColor = brownColor;
-        this.style.color = whiteColor;
-        myWorryBtn1[index].style.backgroundColorcolor = "#E9E5DA";
-        myWorryBtn1[index].style.color = brownColor;
-
-        myWorryBtn2[index].style.backgroundColorcolor = "#E9E5DA";
-        myWorryBtn2[index].style.color = brownColor;
-
-      }
-  
-      isClicked = !isClicked;
-    });
+// 두 번째 버튼을 클릭했을 때의 동작
+document.querySelector('.myWorry-button-3').addEventListener('click', function() {
+  if (!isButton2Clicked) {
+    // 배경색과 폰트색 변경
+    this.classList.add('myWorry-button-1');
+    this.classList.remove('myWorry-button-3');
+    document.querySelector('.myWorry-button-text__title-3').style.color = whiteColor;
+    document.querySelector('.myWorry-button-text__count-3').style.color = whiteColor;
+    myWorryBtnCount.style.color = 'var(--67594-c, rgba(103, 89, 76, 0.50))';
+    // 다른 버튼 찾아서 배경색과 폰트색 변경
+    const otherButtons = document.querySelectorAll('.myWorry-buttons > div:not(.myWorry-button-3)');
+    for (let i = 0; i < otherButtons.length; i++) {
+      const button = otherButtons[i];
+      button.classList.add('myWorry-button-3');
+      button.querySelector('.myWorry-button-text__title-1').style.color = brownColor;
+      button.querySelector('.myWorry-button-text__title-2').style.color = brownColor;
+    }
+  } 
 });
+// 두 번째 버튼 클릭 상태 변수
+let isButton1Clicked = false;
+
+// 두 번째 버튼을 클릭했을 때의 동작
+document.querySelector('.myWorry-button-1').addEventListener('click', function() {
+  if (!isButton2Clicked) {
+    // 배경색과 폰트색 변경
+    this.style.backgroundColor = brownColor;
+    document.querySelector('.myWorry-button-text__title-1').style.color = whiteColor;
+    document.querySelector('.myWorry-button-text__count-1').style.color = whiteColor;
+    // 다른 버튼 찾아서 배경색과 폰트색 변경
+    const otherButtons = document.querySelectorAll('.myWorry-buttons > div:not(.myWorry-button-1)');
+    for (let i = 0; i < otherButtons.length; i++) {
+      const button = otherButtons[i];
+      button.style.backgroundColor = lightBrownColor;
+      button.querySelector('.myWorry-button-text__title-1').style.color = brownColor;
+      button.querySelector('.myWorry-button-text__title-3').style.color = brownColor;
+      button.querySelector('.myWorry-button-text__count-1').style.color = lightBrownColor;
+      button.querySelector('.myWorry-button-text__count-3').style.color = lightBrownColor;
+    }
+
+    isButton2Clicked = true;
+  } 
+});
+
