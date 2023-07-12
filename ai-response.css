@@ -239,11 +239,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 36px;
 }
 
 .img {
-    width: 501px;
-    height: 320px;
+    width: 324.217px;
+height: 310px;
     flex-shrink: 0;
     background: lightgray -3.534px 0px / 101.411% 153.516% no-repeat;
     background-blend-mode: darken;
@@ -256,4 +257,9 @@ footer {
 
 main{ 
     background: var(--faf-9-f-6, #FAF9F6);
+}
+
+.worry-button-box{ 
+    margin-top: 57px;
+    margin-bottom: 19px;
 }

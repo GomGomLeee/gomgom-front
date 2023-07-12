@@ -111,28 +111,15 @@ body {
 
 
 footer {
-    height: 76px;
+    height: 165px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    background: var(--67594-c, rgba(103, 89, 76, 0.50));
+    background: var(--67594-c, #67594C);
 }
 
-.footer {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#footer_content {
-    color: #67594C;
-    font-size: 12px;
-    font-family: Pretendard;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    text-align: center;
-}
 
 /* 추가된 스타일 */
 #nav .navbar {
@@ -611,14 +598,113 @@ footer {
     margin-left: 381px;
 }
 
-.todayWorryContent-left-start-profile-box-icon{ 
+.todayWorryContent-left-start-profile-box-icon {
     margin-top: 8px;
 }
 
-.todayWorryContent-left-start-profile-box-text1{ 
+.todayWorryContent-left-start-profile-box-text1 {
     margin-top: 11px;
 }
 
-.todayWorryContent-left-start-profile-box-text2{ 
+.todayWorryContent-left-start-profile-box-text2 {
     margin-top: 11px;
+}
+
+.footer-contents {
+    display: flex;
+    align-items: row;
+}
+
+.gomgom-logo {
+    color: var(--faf-9-f-6, #FAF9F6);
+    font-family: MuseoModerno;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.footer-text {
+    color: var(--faf-9-f-6, #FAF9F6);
+    text-align: right;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+
+    width: 513px;
+    height: 64px;
+    margin-left: 515px;
+}
+
+.main-part {
+    width: 847px;
+    height: 164px;
+    flex-shrink: 0;
+    margin-top: 32px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bear-img-control {
+    width: 375px;
+    height: 60px;
+    flex-shrink: 0;
+    background: #FDA95D;
+}
+
+
+.image-text-box {
+    width: 280px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 24px 24px;
+    background: var(--67594-c, rgba(103, 89, 76, 0.50));
+
+}
+
+.image1 {
+    position: relative;
+}
+
+.image1 .image-text-box {
+    position: absolute;
+    top: 169px;
+    left: 0;
+    width: 100%;
+}
+
+.image2 {
+    position: relative;
+}
+
+.image2 .image-text-box {
+    position: absolute;
+    top: 169px;
+    left: 0;
+    width: 100%;
+}
+
+.image3 {
+    position: relative;
+}
+
+.image3 .image-text-box {
+    position: absolute;
+    top: 169px;
+    left: 0;
+    width: 100%;
+}
+
+.image-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    padding-top: 11px;
 }

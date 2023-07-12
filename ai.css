@@ -223,6 +223,9 @@ footer {
     background: var(--ffffff, #FFF);
     box-shadow: 0px 2px 4px 0px rgba(210, 205, 189, 0.50);
     text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .worry-text {
@@ -232,6 +235,8 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: 160%;
+    border: none;
+    outline: none;
 }
 
 
@@ -240,21 +245,26 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 36px;
 }
 
 .img {
-    width: 501px;
-    height: 320px;
+    width: 285px;
+    height: 310px;
     flex-shrink: 0;
     background: lightgray -3.534px 0px / 101.411% 153.516% no-repeat;
     background-blend-mode: darken;
 }
 
-.line{ 
+.line {
     height: 4px;
     background: var(--e-9-e-5-da, #E9E5DA);
 }
 
-main{ 
+main {
     background: var(--faf-9-f-6, #FAF9F6);
+}
+
+.worry-text::placeholder {
+    color: var(--d-2-cdbc, #D2CDBC);
 }
