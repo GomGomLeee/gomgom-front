@@ -220,6 +220,8 @@
     font-weight: 500;
     line-height: 160%;
     margin-bottom: 47px;
+    max-width: 500px;
+
 }
 .comments-container__comment-box__time {
     color: var(--color2);
